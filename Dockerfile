@@ -7,5 +7,5 @@ RUN go build
 # Stage 02 - Build app container
 FROM scratch
 WORKDIR /usr/src/app
-COPY --from=go_builder /usr/src/app .
-CMD ["./fullcycle"]
+COPY --from=go_builder /usr/src/app/hello_fullcycle .
+CMD ["./hello_fullcycle"]
