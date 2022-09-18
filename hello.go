@@ -1,14 +1,7 @@
 package main
 
-import (
-    "fmt"
-    "net/http"
-)
+import "fmt"
 
 func main() {
-    http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-        fmt.Fprintf(w, "Full Cycle Works! %s\n", r.URL.Path)
-    })
-
-    http.ListenAndServe(":80", nil)
+    fmt.Println("Full Cycle Rocks!")
 }
