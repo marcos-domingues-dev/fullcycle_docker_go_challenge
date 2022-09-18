@@ -1,7 +1,7 @@
-# Stage 01 - Download and build project
+# Stage - 01 (LOCAL)
 FROM golang:1.19 AS go_builder
 WORKDIR /usr/src/app
-RUN git clone https://github.com/marcos-domingues-dev/fullcycle_go_challenge.git /usr/src/app
+COPY . .
 RUN go build
 
 # Stage 02 - Build app container
