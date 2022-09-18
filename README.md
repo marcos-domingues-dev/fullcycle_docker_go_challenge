@@ -2,8 +2,7 @@
 
 Imagem GO: https://hub.docker.com/r/mdominguesdev/fullcycle_go_challenge
 
-
-# Docker commands 
-	$ docker build -t mdominguesdev/fullcycle_go_challenge --no-cache .
+# Docker commands
+	$ git clone https://github.com/marcos-domingues-dev/fullcycle_go_challenge.git
+	$ cd fullcycle_go_challenge/
 	$ docker run mdominguesdev/fullcycle_go_challenge
-	$ docker push mdominguesdev/fullcycle_go_challenge
